@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -17,36 +18,41 @@ padding: 0 20px; }
  
 /* ================= Buttons ================= */
 .button-pri {
+font-weight: 605;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  transition: all 0.3s ease;
+
   background-color: #30b868;
   color: #fff;
   border: none;
   border-radius: 5px;
   padding: 14px 24px;
   font-size: 18px;
-  font-weight: 605;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 11px;
-  transition: all 0.3s ease;
+  
 }
 
 .button-pri:hover {
   background: linear-gradient(135deg, #30b868, #1f9d55);
   transform: translateY(-3px);
+  letter-spacing: 1px;
+   cursor: pointer;
 }
 
-.btn-outline {
-  background: transparent;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  padding: 12px 24px;
+.button-out {
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 12px 24px;
+  
   gap: 10px;
 }
 
@@ -60,10 +66,11 @@ padding: 0 20px; }
 
 
 .head-contain {
+  display: flex;
   max-width: 1400px;
   margin: auto;
   padding: 15px 20px;
-  display: flex;
+  
   justify-content: space-between;
   align-items: center;
 }
@@ -106,13 +113,14 @@ padding: 0 20px; }
 }
 
 .badgeofbutton {
+  font-size: 16px;
+  border: none;
+  margin-bottom: 20px;
   background: #fff;
   color: #30b868;
   padding: 8px 16px;
   border-radius: 100px;
-  font-size: 16px;
-  border: none;
-  margin-bottom: 20px;
+  
 }
 
 .banner-content h1 {
@@ -159,23 +167,26 @@ padding: 0 20px; }
 }
 
 .issue-card {
-  background: #fff;
-  padding: 30px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+
+  background: #fff;
+  padding: 32px 22px;
+  
 }
 
 .issue-card i {
-  font-size: 20px;
-  background: #f95555;
-  color: #fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: inline-flex;
+   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
+  font-size: 21px;
+  background: #f95555;
+  color: #fff;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+ 
 }
 
 .issue-card h4 {
@@ -273,14 +284,19 @@ padding: 0 20px; }
 }
 
 .footer-links a {
-  width: 40px;
-  height: 40px;
-  background: #fff;
-  color: #000;
-  border-radius: 50%;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  /* background: #30b868; */
+  /* color: #fff; */
+  transform: translateY(-4px);
+  transform: scale(0.95);
 }
 
 
